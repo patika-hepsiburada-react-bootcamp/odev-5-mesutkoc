@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
-import Main from "../src/components/Main"
-  
+import Main from "./components/Main"
+
 function App() {
+  const [name] = useState<string>('mesut');
   return (
     <div className="App">
-      <Main></Main>
+     
+        <Main name={name}></Main>
+     
     </div>
   );
 }
