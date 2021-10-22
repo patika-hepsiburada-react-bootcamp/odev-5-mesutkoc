@@ -3,9 +3,9 @@ import { CategoryContexts, Category } from "./types";
 
 const defaultCategpries: CategoryContexts = {
   category: [
-    { id: "1", category: "ALL" },
+    { id: "1", category: "ACTIVE"},
     { id: "2", category: "DONE" },
-    { id: "3", category: "CLEAR" },
+    { id: "3", category: "DETAIL"},
   ],
 };
 

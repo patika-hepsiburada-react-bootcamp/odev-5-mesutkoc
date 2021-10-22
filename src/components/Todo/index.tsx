@@ -24,7 +24,7 @@ function Newtodo() {
         placeholder="set some"
         onChange={(e) => handleChange(e.target.value)}
       ></input>
-      <button onClick={() => addTodo()}>ekle</button>
+      <button onClick={() => addTodo()}>Add</button>
     </div>
   );
 }
