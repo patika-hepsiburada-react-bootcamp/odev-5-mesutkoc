@@ -7,7 +7,7 @@ const defaultTodos: TodoContexts = {
     { id: "2", description: "Wash car", status: "true" },
     { id: "3", description: "Going shop", status: "true" },
   ],
-  deletedTodo: [{ id: "4", description: "Going sport", status: "true" }],
+  deletedTodo: [{ id: "4", description: "Going sport", status: "false" }],
   setTodo: () => {},
   setDeletedTodo: () => {},
 };

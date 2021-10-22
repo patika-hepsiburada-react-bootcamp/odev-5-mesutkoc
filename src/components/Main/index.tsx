@@ -12,6 +12,7 @@ const Main: FC<IProps> = (props) => {
       todo.findIndex((item) => item.id === id),
       1
     );
+    deleteditem[0].status = "false";
     setTodo([...todo]);
     setDeletedTodo([...deletedTodo, deleteditem[0]]);
   };
