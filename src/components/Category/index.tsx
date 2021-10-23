@@ -1,12 +1,12 @@
 import { useCat } from '../../contexts/CategoryContext';
 
 const Category = () => {
-  const { category, selectedCategory, setCategory } = useCat();
+  const { category, setCategory } = useCat();
   const setActiveCategory = (category:string) => {
     setCategory(category);
   }
     return (
-      <div>
+      <div className="category">
         {category.map((item) => (
           <label
             key={item.id}

@@ -1,20 +1,35 @@
 import { useState } from "react";
-import { useTodo } from "../../contexts/TodoContext/";
+import { useTodo, today } from "../../contexts/TodoContext/";
+import { useCat } from "../../contexts/CategoryContext";
 import { nanoid } from "nanoid";
+
 function Newtodo() {
-  const { todo, setTodo } = useTodo();
+  const { todo, setTodo, setAllTodo, allTodo } = useTodo();
+  const { setCategory } = useCat();
+
   const [description, setDescription] = useState<string>("");
   const handleChange = (ss: string) => {
     setDescription(ss);
   };
   const addTodo = () => {
     const id = nanoid();
+    setCategory("ACTIVE");
     setTodo([
       ...todo,
       {
         id: id,
         description: description,
         status: "true",
+        date: today,
+      },
+    ]);
+    setAllTodo([
+      ...allTodo,
+      {
+        id: id,
+        description: description,
+        status: "true",
+        date: today,
       },
     ]);
   };
