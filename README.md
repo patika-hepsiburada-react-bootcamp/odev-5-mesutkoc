@@ -6,7 +6,7 @@
 
 ## Astronotes
 
-![https://raw.githubusercontent.com/patika-hepsiburada-react-bootcamp/odev-5-mesutkoc/master/public/favicon.ico]
+![Astronotes](https://raw.githubusercontent.com/patika-hepsiburada-react-bootcamp/odev-5-mesutkoc/master/public/favicon.ico)
 
 ## Homework 5 Details
 
