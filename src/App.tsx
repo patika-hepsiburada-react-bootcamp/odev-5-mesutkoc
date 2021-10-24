@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 import Time from "./components/Time";
 import Icon from "../src/assets/icons85.png";
 
@@ -19,6 +20,7 @@ function App() {
       </div>
 
       <Main name={name}></Main>
+      <Footer></Footer>
     </div>
   );
 }

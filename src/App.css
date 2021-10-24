@@ -140,3 +140,23 @@ button:hover {
   font-size: 2rem;
   margin-top: 2rem;
 }
+.footer {
+   position: fixed;
+   display: flex;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   align-items: center;
+  justify-content: center;
+   background-color: #64c4ed;
+   color: white;
+   font-weight: bold;
+   height: 2rem;
+}
+.footerIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color:white;
+  margin-left: 1rem;
+  float: right;
+}

@@ -13,24 +13,18 @@ function Newtodo() {
   const addTodo = () => {
     const id = nanoid();
     setCategory("ACTIVE");
-    setTodo([
-      ...todo,
-      {
-        id: id,
-        description: description,
-        status: "true",
-        date: today,
-      },
-    ]);
-    setAllTodo([
-      ...allTodo,
-      {
-        id: id,
-        description: description,
-        status: "true",
-        date: today,
-      },
-    ]);
+    const data = {
+      id: id,
+      description: description,
+      status: "true",
+      date: today,
+    };
+    if (description !== "") {
+      setTodo([...todo, data]);
+      setAllTodo([...allTodo, data]);
+    } else {
+      alert("Please type todo!");
+    }
   };
   return (
     <div className="addTodo">
