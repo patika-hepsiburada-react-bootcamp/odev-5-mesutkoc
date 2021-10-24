@@ -13,7 +13,7 @@ function Done() {
           .map((item) => (
             <li key={item.id}>
               <p>
-                {item.description} <span>{item.date}</span>
+                {item.description} <span className="itemdate">{item.date}</span>
               </p>
               <hr />
             </li>

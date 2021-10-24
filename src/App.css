@@ -56,6 +56,13 @@
   font-size: 1rem;
   font-weight: bold;
 }
+.itemdate{
+  border: 0.1rem solid #64c4ed;
+  border-radius:0.5rem;
+  float: right;
+  margin-right: 1rem;
+  padding: 0.2rem;
+}
 .deleteButton {
   background-color: #64c4ed;
   border-radius: 50%;
@@ -130,5 +137,6 @@ button:hover {
   margin-top: 1rem;
 }
 .time {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }

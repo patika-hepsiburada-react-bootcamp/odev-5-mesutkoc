@@ -31,7 +31,7 @@ function Active() {
                 ✓
               </button>
               <p>
-                {item.description} <span>{item.date}</span>
+                {item.description} <span className="itemdate">{item.date}</span>
               </p>
               <hr />
             </li>
