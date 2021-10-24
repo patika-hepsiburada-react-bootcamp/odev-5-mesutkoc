@@ -1,8 +1,8 @@
 # Patika.dev - Hepsiburada React Bootcamp
 
-## ASTRONOTES Todo Application
+## ASTRONOTES - Todo Application
 
-[Live Demo]()
+[Live Demo](https://angry-jepsen-04fd47.netlify.app/)
 
 ## Astronotes
 
