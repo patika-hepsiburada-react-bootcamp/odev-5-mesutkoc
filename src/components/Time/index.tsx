@@ -1,12 +1,17 @@
 import React from "react";
-import { days, currentTime, today } from "../../contexts/TodoContext";
+import { days, today, times } from "../../contexts/TodoContext";
+
 function Time() {
-  const day = days[new Date().getDay()];
-  console.log(currentTime);
+  
+  const day = days[times.getDay()];
+  const time = times.getHours() + ":" + times.getMinutes();
   return (
-      <div className="time">
-      <div> {day}</div>
-      <div>{today}</div>
+    <div className="timeDiv">
+      <div className="timeContainer">
+        <div className="time">{time}</div>
+        <div className="day">{day}</div>
+        <div className="date">{today}</div>
+      </div>
     </div>
   );
 }

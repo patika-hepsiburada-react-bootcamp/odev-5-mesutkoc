@@ -12,20 +12,21 @@
 }
 .iconHeader h1 {
   text-align: center;
-  color:#885df1;
+  color: #885df1;
 }
 
 .category {
   text-align: center;
   width: 50%;
-  margin: 4% 25%;
+  margin: 1% 25%;
 }
 .list {
   list-style: none;
   overflow-y: scroll;
   height: 11rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2rem 0.5rem 0.5rem 2rem;
+  color:white;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 10px #64c4ed;
@@ -36,7 +37,7 @@
   position: absolute;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #7bac10;
+  background: #885df1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -45,8 +46,8 @@
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.list hr{
-  margin:0 0.5rem;
+.list hr {
+  margin: 0 0.5rem;
 }
 .list button {
   float: left;
@@ -72,15 +73,23 @@
   width: 5rem;
   height: 2rem;
 }
-.buttonGroup {
-  background-color: rgba(0, 0, 0, 0.3);
+.buttons {
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
   padding: 0.3rem 0;
+}
+
+.trash {
+  margin-left: 2rem;
+  width: 1.2rem;
+}
+.trash:hover{
+  transform: scale(1.2);
 }
 .addTodo {
   width: 50%;
   margin: 0 25%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
 }
 .todoInput {
@@ -99,8 +108,27 @@
   width: 10%;
   color: white;
 }
-.time{
-  position:fixed;
-  top:5rem;
 
+button:hover {
+  background-color: #885df1;
+  transform: scale(1.1);
+}
+
+.timeDiv {
+  position: absolute;
+  top: 2rem;
+  left: -5rem;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 4rem;
+  color: white;
+  font-weight: bold;
+}
+.timeContainer {
+  margin-top: 1rem;
+}
+.time {
+  font-size: 3rem;
 }

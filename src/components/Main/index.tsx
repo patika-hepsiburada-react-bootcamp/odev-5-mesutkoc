@@ -1,7 +1,5 @@
 import { FC } from "react";
 import { useCat } from "../../contexts/CategoryContext";
-
-
 import { IProps } from "./types";
 import Newtodo from "../Todo";
 import Category from "../Category";

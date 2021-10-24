@@ -2,7 +2,7 @@ import { useState, createContext, useContext, FC } from "react";
 import { TodoContexts, Todo } from "./types";
 
 export const today = new Date().toLocaleDateString();
-export const currentTime = new Date().toLocaleString();
+export const times = new Date();
 export const days = [
   "Sunday",
   "Monday",
@@ -15,18 +15,28 @@ export const days = [
 
 const defaultTodos: TodoContexts = {
   todo: [
-    { id: "1", description: "Make breakfast", status: "true", date: today },
-    { id: "2", description: "Wash car", status: "true", date: today },
-    { id: "3", description: "Going shop", status: "true", date: today },
+    { id: "1", description: "Check email box", status: "true", date: today },
+    { id: "2", description: "Edit new articles", status: "true", date: today },
+    {
+      id: "3",
+      description: "Take a break to work",
+      status: "true",
+      date: today,
+    },
   ],
   deletedTodo: [
-    { id: "4", description: "Going sport", status: "false", date: today },
+    { id: "4", description: "Write blog post", status: "false", date: today },
   ],
   allTodo: [
-    { id: "1", description: "Make breakfast", status: "true", date: today },
-    { id: "2", description: "Wash car", status: "true", date: today },
-    { id: "3", description: "Going shop", status: "true", date: today },
-    { id: "4", description: "Going sport", status: "false", date: today },
+    { id: "1", description: "Check email box", status: "true", date: today },
+    { id: "2", description: "Edit new articles", status: "true", date: today },
+    {
+      id: "3",
+      description: "Take a break to work",
+      status: "true",
+      date: today,
+    },
+    { id: "4", description: "Write blog post", status: "false", date: today },
   ],
   setTodo: () => {},
   setDeletedTodo: () => {},
