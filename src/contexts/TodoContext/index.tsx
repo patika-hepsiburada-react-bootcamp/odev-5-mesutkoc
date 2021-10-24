@@ -2,6 +2,16 @@ import { useState, createContext, useContext, FC } from "react";
 import { TodoContexts, Todo } from "./types";
 
 export const today = new Date().toLocaleDateString();
+export const currentTime = new Date().toLocaleString();
+export const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Friday",
+  "Thursday",
+  "Saturday",
+];
 
 const defaultTodos: TodoContexts = {
   todo: [

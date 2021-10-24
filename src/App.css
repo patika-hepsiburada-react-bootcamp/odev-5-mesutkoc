@@ -1,3 +1,106 @@
 .App {
   text-align: center;
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 5rem;
+}
+.iconHeader {
+  display: flex;
+  text-align: center;
+  padding: 0 35%;
+}
+.iconHeader h1 {
+  text-align: center;
+  color:#885df1;
+}
+
+.category {
+  text-align: center;
+  width: 50%;
+  margin: 4% 25%;
+}
+.list {
+  list-style: none;
+  overflow-y: scroll;
+  height: 11rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem 0.5rem 0.5rem 2rem;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #64c4ed;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 0.6rem;
+  position: absolute;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7bac10;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #64c4ed;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.list hr{
+  margin:0 0.5rem;
+}
+.list button {
+  float: left;
+}
+.list p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.deleteButton {
+  background-color: #64c4ed;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+.buttonGroup button {
+  margin: 0 2rem;
+  background-color: #64c4ed;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  width: 5rem;
+  height: 2rem;
+}
+.buttonGroup {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  padding: 0.3rem 0;
+}
+.addTodo {
+  width: 50%;
+  margin: 0 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+.todoInput {
+  height: 2rem;
+  border-radius: 2rem 0 0 2rem;
+  border: none;
+  margin: 1rem 0;
+  text-align: center;
+  width: 80%;
+}
+.addTodo button {
+  background-color: #64c4ed;
+  border: none;
+  border-radius: 0 2rem 2rem 0;
+  height: 2.1rem;
+  width: 10%;
+  color: white;
+}
+.time{
+  position:fixed;
+  top:5rem;
+
 }

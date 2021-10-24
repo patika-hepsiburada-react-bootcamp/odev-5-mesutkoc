@@ -6,10 +6,13 @@ function Done() {
 
   return (
     <div className="category">
-      <ul className="categoryDoneList">
-        {deletedTodo.map((item) => (
+      <ul className="list">
+        {deletedTodo.slice(0).reverse().map((item) => (
           <li key={item.id}>
-            {item.id} {item.description} {item.status} {item.date}
+            <p>
+              {item.description} <span>{item.date}</span>
+            </p>
+            <hr />
           </li>
         ))}
       </ul>

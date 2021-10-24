@@ -1,23 +1,25 @@
-import { useCat } from '../../contexts/CategoryContext';
+import { useCat } from "../../contexts/CategoryContext";
 
 const Category = () => {
   const { category, setCategory } = useCat();
-  const setActiveCategory = (category:string) => {
+  const setActiveCategory = (category: string) => {
     setCategory(category);
-  }
-    return (
-      <div className="category">
+  };
+  return (
+    <div className="category">
+      <div className="buttonGroup">
         {category.map((item) => (
-          <label
+          <button
+            className="categoryButtons"
             key={item.id}
-            style={{ paddingLeft: "1rem" }}
             onClick={() => setActiveCategory(item.category)}
           >
             {item.category}
-          </label>
+          </button>
         ))}
       </div>
-    );
+    </div>
+  );
 };
 
 export default Category;

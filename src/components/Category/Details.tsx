@@ -6,12 +6,18 @@ function Details() {
 
     return (
       <div className="category">
-        <ul className="categoryDoneList">
-          {allTodo.map((item) => (
-            <li key={item.id}>
-              {item.id} {item.description} {item.status} {item.date}
-            </li>
-          ))}
+        <ul className="list">
+          {allTodo
+            .slice(0)
+            .reverse()
+            .map((item) => (
+              <li key={item.id}>
+                <p>
+                  {item.description} <span>{item.date}</span>
+                </p>
+                <hr />
+              </li>
+            ))}
         </ul>
       </div>
     );

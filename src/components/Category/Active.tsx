@@ -4,7 +4,6 @@ import { useTodo } from "../../contexts/TodoContext";
 function Active() {
   const { todo, setTodo, deletedTodo, setDeletedTodo } = useTodo();
 
-
   const deleteTodo = (id: string) => {
     const deleteditem = todo.splice(
       todo.findIndex((item) => item.id === id),
@@ -17,19 +16,26 @@ function Active() {
 
   return (
     <div className="category">
-      <ul className="categoryActiveList">
-        {todo.map((item) => (
-          <li key={item.id}>
-            {item.id} {item.description} {item.status}
-            <button
-              key={item.id}
-              type="button"
-              onClick={() => deleteTodo(item.id)}
-            >
-              Delete
-            </button>
-          </li>
-        ))}
+      <ul className="list">
+        {todo
+          .slice(0)
+          .reverse()
+          .map((item) => (
+            <li key={item.id}>
+              <button
+                className="deleteButton"
+                key={item.id}
+                type="button"
+                onClick={() => deleteTodo(item.id)}
+              >
+                ✓
+              </button>
+              <p>
+                {item.description} <span>{item.date}</span>
+              </p>
+              <hr />
+            </li>
+          ))}
       </ul>
     </div>
   );

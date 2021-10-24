@@ -6,7 +6,6 @@ import { nanoid } from "nanoid";
 function Newtodo() {
   const { todo, setTodo, setAllTodo, allTodo } = useTodo();
   const { setCategory } = useCat();
-
   const [description, setDescription] = useState<string>("");
   const handleChange = (ss: string) => {
     setDescription(ss);
@@ -34,9 +33,11 @@ function Newtodo() {
     ]);
   };
   return (
-    <div>
+    <div className="addTodo">
       <input
-        placeholder="set some"
+        className="todoInput"
+        type="text"
+        placeholder="What is your purpose?"
         onChange={(e) => handleChange(e.target.value)}
       ></input>
       <button onClick={() => addTodo()}>Add</button>
